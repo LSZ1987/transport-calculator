@@ -6,7 +6,8 @@ const wrapper2 = document.querySelector('.appWrapper2')
 const startApp = () => {
 setTimeout(() => {
     wrapper1.classList.add('showApp')
-    wrapper2.classList.add('showApp')   
+    wrapper2.classList.add('showApp')
+    truckIcon.style.display = 'none'
 
 }, '2000')    
 
