@@ -1,0 +1,252 @@
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+    background-image: url('./appBackground.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    text-align: center;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+.appBody {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.appWrapper,
+.appWrapper2 {
+    display: none;
+    background-color: rgba(44, 51, 36, 0.7);
+    backdrop-filter: blur(4px);
+    padding: 10px 20px;
+    box-shadow: 5px 5px 10px black;
+    min-height: 80%;
+    transition: 1s;
+}
+
+.title {
+    width: 350px;
+}
+
+select,
+input,
+button {
+    width: 350px;
+    height: 40px;
+    font-size: 1.2rem;
+    text-align: left;
+    background-color: white;
+    border: none;
+}
+
+.selectList2 {
+    width: 300px;
+}
+
+.openCustomerList {
+    width: 45px;
+    margin-top: 0px;
+}
+
+button {
+    cursor: pointer;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.showDPDD,
+.showGLSS,
+.showFinalPrice,
+.showOnePal,
+.showSpedition,
+.showCompare {
+    border: 1px solid white;
+    height: 40px;
+    line-height: 40px;
+    box-shadow: 3px 3px #837238;
+}
+
+.dpddLogo,
+.glssLogo,
+.ranebLogo,
+.dakersLogo {
+    width: 350px;
+    height: 40px;
+    background-size: 150px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid white;
+    margin-bottom: 20px;
+    box-shadow: 3px 3px #837238;
+    filter: grayscale(100%);
+}
+
+.dpddLogo:hover,
+.glssLogo:hover,
+.ranebLogo:hover,
+.dakersLogo:hover {
+    filter: grayscale(0%);
+    cursor: pointer;
+}
+
+.logoCheck {
+    filter: grayscale(0%);
+    background-color: white;
+}
+
+.dpddLogo {
+    background-image: url('./DPDD.png');
+}
+
+.glssLogo {
+    background-image: url('./GLSS.png');
+}
+
+.ranebLogo {
+    background-image: url('./RANEB.png');
+}
+
+.dakersLogo {
+    background-image: url('./DAKERS.png');
+}
+
+.error {
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
+.customerList {
+    height: 100%;
+    width: 300px;
+    position: fixed;
+    z-index: 1;
+    left: -350px;
+    transition: 0.5s;
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    box-shadow: 3px 3px #837238;
+}
+
+.listOpen {
+    left: 0px;
+}
+
+.findCustomer {
+    width: 200px;
+    height: 40px;
+    border: 1px solid black;
+}
+
+.listWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.listLeft {
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: left;
+    width: 90%;
+}
+
+.listLeft p:nth-child(odd) {
+    background-color: lightgrey;
+}
+
+.listLeft p:hover {
+    cursor: pointer;
+    background-color: #837238;
+}
+
+.truckDPDD,
+.truckGLSS,
+.truckSpedition {
+    color: white;
+    position: absolute;
+    z-index: -1;
+    display: none;
+    opacity: 0;
+    left: 0px;
+}
+
+.truckDPDD.showTruck,
+.truckGLSS.showTruck,
+.truckSpedition.showTruck {
+    display: block;
+    animation-duration: 1.5s;
+    animation-name: goForward;
+    animation-fill-mode: forwards;
+}
+
+@keyframes goForward {
+    0% {
+        left: 0;
+        opacity: 0;
+    }
+
+    100% {
+        left: 300px;
+        opacity: 1;
+    }
+}
+
+.truckSpedition.showTruck2 {
+    display: block;
+    transform: rotateY(180deg);
+    animation-duration: 1.5s;
+    animation-name: goBackward;
+    animation-fill-mode: forwards;
+}
+
+@keyframes goBackward {
+    0% {
+        left: 350px;
+        opacity: 0;
+    }
+
+    100% {
+        left: 60px;
+        opacity: 1;
+    }
+}
+
+.fa-truck-front {
+    animation-name: intro;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    filter: drop-shadow(1px 1px 5px black)
+}
+
+@keyframes intro {
+    0% {
+        transform: scale(1);
+        opacity: 0;
+    }
+
+    80% {
+        transform: scale(7);
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: scale(7);
+    }
+}
+.showApp {
+    display: block;
+}

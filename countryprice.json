@@ -1,0 +1,29 @@
+{
+  "pricesEurope": [
+    {
+      "country": "(RO) ROMANIA",
+      "DPDD": 5,
+      "GLSS": 10
+    },
+    {
+      "country": "(BG) BULGARY",
+      "DPDD": 20,
+      "GLSS": 15
+    },
+    {
+      "country": "(EL) GREECE",
+      "DPDD": 25,
+      "GLSS": 25
+    },
+    {
+      "country": "(NL) NETHERLANDS",
+      "DPDD": 30,
+      "GLSS": 35
+    },
+    {
+      "country": "(HU) HUNGARY",
+      "DPDD": 45,
+      "GLSS": 40
+    }
+  ]
+}

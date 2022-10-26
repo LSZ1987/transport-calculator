@@ -1,0 +1,110 @@
+<html lang="pl">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="./style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/4e3c66f81b.js" crossorigin="anonymous"></script>
+	
+</head>
+<body>
+
+<div class="customerList">
+	<p>List of customers</p>
+	<input type="text" class="findCustomer" placeholder="Find customer">
+
+<div class="listWrapper">
+<div class="listLeft">
+ID / NAME
+</div>
+</div>
+
+</div>
+
+	<div class="appBody">
+		<i class="fa-solid fa-truck-front"></i>
+		<div class="appWrapper">
+			<div class="title">
+				<h2>CHECK YOUR PACKAGES</h2>
+			</div>
+
+			<div class="listCustomers">
+				<p>select country</p>
+				<select class="selectList" onchange="showPrice()">
+					<option selected disabled hidden>CHOOSE COUNTRY</option>
+				</select>
+			</div>
+
+			<div class="dpddSection">
+				<p>Price for DPDD<i class="fa-solid fa-truck-fast truckDPDD"></i></p>
+				<p class="showDPDD">waiting for price from DPDD</p>
+			</div>
+
+			<div class="glssSection">
+				<p>Price for GLSS<i class="fa-solid fa-truck-fast truckGLSS"></i></p>
+				<p class="showGLSS">waiting for price from GLSS</p>
+			</div>
+
+			<div class="whatBetter">
+				<p>Enter number of packages</p>
+				<input type="text" class="numberPackages" disabled="disabled" placeholder="at first choose country">
+			</div>
+
+			<div class="finalPrice">
+				<p class="showFinalPrice">waiting for country</p>
+			</div>
+
+			<div class="dpddLogo"></div>
+			<div class="glssLogo"></div>
+
+		</div>
+		<div class="appWrapper2">
+			<div class="title2">
+				<h2>CHECK YOUR PALETTES</h2>
+			</div>
+
+			<div class="listPalettes">
+				<p>select customer by id</p>
+				<select class="selectList2" onchange="checkPalette()">
+					<option selected disabled hidden>CHOOSE CUSTOMER</option>
+				</select>
+				<button class="openCustomerList">...</button>
+			</div>
+
+			<div class="onePalSection">
+				<p>Price for one palette</p>
+				<p class="showOnePal">waiting for customer</p>
+			</div>
+
+			<div class="speditionSection">
+				<p>Spedition<i class="fa-solid fa-truck-moving truckSpedition"></i></p>
+				<p class="showSpedition">waiting for customer</p>
+			</div>
+
+			<div class="comparePackage">
+				<button class="compareButton" disabled="disabled">COMPARE WITH PACKAGES</button>
+			</div>
+
+			<div class="compareSection">
+				<p>Palette vs packages</p>
+				<p class="showCompare">waiting for action</p>
+			</div>
+
+			<div class="ranebLogo"></div>
+			<div class="dakersLogo"></div>
+
+
+		</div>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+	<script src="packages.js"></script>
+	<script src="palettes.js"></script>
+	<script src="customerList.js"></script>
+	<script src="intro.js"></script>
+
+</body>
+
+</html>

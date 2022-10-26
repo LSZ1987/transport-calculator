@@ -1,0 +1,34 @@
+{
+  "palettesCustomers": [
+    {
+      "name": "RO100",
+      "fullname": "Alphabet Romania",
+      "onePal": 100,
+      "spedition": "Raneb"
+    },
+    {
+      "name": "BG100",
+      "fullname": "Bigbro Bulgary",
+      "onePal": 90,
+      "spedition": "Raneb"
+    },
+    {
+      "name": "BG120",
+      "fullname": "Vidovid Bulgary",
+      "onePal": 98,
+      "spedition": "Dakers"
+    },
+    {
+      "name": "EL200",
+      "fullname": "Apartments Greece",
+      "onePal": 150,
+      "spedition": "Dakers"
+    },
+    {
+      "name": "HU320",
+      "fullname": "Transport Hungary",
+      "onePal": 67,
+      "spedition": "Raneb"
+    }
+  ]
+}
