@@ -33,7 +33,7 @@ p {
     backdrop-filter: blur(4px);
     padding: 10px 20px;
     box-shadow: 5px 5px 10px black;
-    min-height: 80%;
+    min-height: 90%;
     transition: 1s;
 }
 
